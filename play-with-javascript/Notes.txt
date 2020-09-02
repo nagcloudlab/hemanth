@@ -1,0 +1,23 @@
+
+
+
+
+Functional Programming
+-----------------------
+
+==> solving problems thru function(s)
+
+
+principles :
+
+
+    Functions as first-class entities
+    
+    i.e
+
+    => A function can be stored in a variable or value i,e function is first-class citizen
+    => A parameter of a function can be a function 
+    => The return value of a function can be a function
+ 
+
+- Higher-Order-Functions 
