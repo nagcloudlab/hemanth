@@ -1,0 +1,20 @@
+
+
+
+ => Behavior parameterization
+ => Funcmtion composition i.e HOF
+ => observer 
+
+
+ -------------------------------------------------
+
+ chain-of-responsibility
+
+ ATM machine
+
+    currency-dispenser-2 => 500
+    currency-dispenser-1 => 2000k
+    currency-dispenser-3 => 100
+
+-------------------------------------------------
+
