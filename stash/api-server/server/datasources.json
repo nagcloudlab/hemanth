@@ -4,7 +4,7 @@
     "connector": "memory"
   },
   "mongo-db": {
-    "url": "mongodb+srv://user3:user33@cluster0-socov.mongodb.net/shop-db?retryWrites=true&w=majority",
+    "url": "mongodb+srv://user1:user1@cluster0.socov.mongodb.net/shop_db?retryWrites=true&w=majority",
     "name": "mongo-db",
     "useNewUrlParser": true,
     "connector": "mongodb"
