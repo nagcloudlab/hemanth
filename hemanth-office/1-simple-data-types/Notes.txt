@@ -1,0 +1,22 @@
+
+
+javascript data-types
+----------------------
+
+
+    2 types
+    -------
+
+        1. simple / primary / primitives
+
+           1. undefined
+           2. string
+           3. number
+           4. boolean
+
+
+        3. complex / reference
+
+            1. objects
+
+------------------------------------------------------------------------               

@@ -29,7 +29,7 @@ export class ItemService {
 
 
     if (!this.items) {
-      this.items = this.http.get("http://localhost:8080/api/items").pipe(shareReplay(1), catchError(err => EMPTY));
+      this.items = this.http.get("http://localhost:8080/api/items").pipe(shareReplay(0), catchError(err => EMPTY));
       return this.items;
     } else {
       return this.items;
