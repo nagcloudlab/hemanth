@@ -87,6 +87,164 @@
 
 
 //------------------------------------------
-// FP principles
+//  Function With default params
 //------------------------------------------
 
+
+
+// function func(a = 1, b = 2) {
+
+//   // if (!a) {
+//   //   a = 1
+//   // }
+//   // if (!b) {
+//   //   b = 2
+//   // }
+
+//   // a = a || 1
+//   // b = b || 2
+
+//   console.log(a)
+//   console.log(b)
+// }
+
+// func()
+
+
+
+//------------------------------------------
+//  Function With rest params
+//------------------------------------------
+
+// function func(a, b, ...remaining) {
+//   console.log(a)
+//   console.log(b)
+//   console.log(remaining)
+// }
+// func(10, 20, 30, 40)
+
+// --------------------------------------------
+
+// function machine(inp1, inp2) {
+//   return { z: inp1.x + inp2.y }
+// }
+
+// let result = machine({ x: 10 }, { y: 20 })
+// console.log(result)
+
+//-------------------------------------------
+
+// function func(){
+//   console.log("hello")
+//   // return undefined
+// }
+
+// let result=func()
+// console.log(result)
+
+
+
+//-------------------------------------------
+// FP principles
+//-------------------------------------------
+
+
+//# function as value
+
+// function greet() {
+//   console.log("hello")
+// }
+
+// const sayHello = greet
+// sayHello()
+
+
+// # parameter of function can be other function
+
+
+// function greet(f) {
+//   console.log("🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺")
+//   f()
+//   console.log("🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺🌺")
+// }
+
+// function en() {
+//   console.log("hello")
+// }
+
+// function tn() {
+//   console.log("vanakkam")
+// }
+
+// function te() {
+//   console.log("Namaskaram")
+// }
+
+// greet(en)
+// greet(tn)
+// greet(te)
+
+
+
+// # function can return other function
+
+
+// function teach() {
+//   console.log("💻💻💻💻💻💻💻💻💻💻💻💻💻💻")
+//   console.log("teaching...")
+//   const learn = function () {
+//     console.log("learning..")
+//   }
+//   //learn()
+//   console.log("💻💻💻💻💻💻💻💻💻💻💻💻💻💻")
+//   return learn
+// }
+// const learnFunc = teach()
+
+// learnFunc();
+// learnFunc();
+
+
+//------------------------------------------------------------------
+// closure
+//------------------------------------------------------------------
+
+
+// function teach(sub) {
+//   console.log(`teaching ${sub}`)
+//   const notes = `${sub}-notes`
+//   const fun="bla bla";
+//   function learn() {
+//     console.log("learning with " + notes)
+//   }
+//   console.log(`teaching ends`)
+//   return learn;
+// }
+
+// let learnFunc=teach("javacript")
+
+// learnFunc();
+
+//--------------------------------------------------------------------
+
+
+
+var arr = []
+
+
+for (var i = 0; i < 200; i++) {
+
+  var func = function () {
+    console.log(i)
+  }
+
+  arr.push(func)
+
+}
+
+
+var f1 = arr[0]
+var f2 = arr[1]
+
+f1()
+f2();
